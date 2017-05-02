@@ -1,0 +1,96 @@
+
+.FooterStretch{
+	overflow: hidden;
+	padding: 65px 0px;
+}
+
+.LeftLoose{
+	height: 250px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+.LogoPlacer{
+    background: url('Icons/FooterLOGO.png') no-repeat;
+    width: 275px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    
+}
+.FooterColumns{
+	padding:0px 0px 0px 3%;
+	width: 100%;
+	float: left;
+}
+.footerHeads{
+ font-size: 1em;
+ color: #fff;
+ font-weight: 600;
+ margin: 30px auto 18px auto!important;
+ text-decoration:none!important;
+}
+.footerHeads a:hover
+{
+    text-decoration: none!important;
+}
+.footerLinks{
+	color: darkgray;
+	padding:6px 0px;
+	display: block;
+    
+}
+.footerLinks:hover
+{
+	color: #7EA7D8;
+    text-decoration:none!important;
+}
+#contactNo:before{
+	margin-right: 3px;
+	content: url('Icons/phone.png');
+	position: relative;
+	top: 3px;
+}
+#contactMail:before{
+	content: url('Icons/mail.png');
+	margin-right: 3px;
+	position: relative;
+	top: 3px;
+}
+
+.FooterBottom{
+	color: gray;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.SocialPanel{
+	width: 190px;
+	margin-top: 8%;
+	margin: 0px auto;
+}
+@media only screen and (min-width: 500px) {
+    
+.FooterColumns{
+	width: 200px;
+}
+
+.LeftLoose{
+	float: none;
+}
+
+}
+@media only screen and (min-width: 768px) {
+    
+.LeftLoose{
+width: 35%;
+float: left;
+
+}
+.FooterColumns{
+	width: auto;
+	
+	min-width: 180px;
+
+}
+}

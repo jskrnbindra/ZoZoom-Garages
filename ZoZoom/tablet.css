@@ -1,0 +1,121 @@
+﻿@media only screen and (min-width: 500px)
+{
+ 
+    .DynamicRedirect
+        {
+         width: 134px;
+    height: 32px;
+    font-size: 16px;
+        }
+    .MostProminentText {
+        font-size: 2.3em;
+    }
+    .ServicesAnimation {
+        font-size: .9em;
+
+    }
+    .AnimationPositioner{
+          width: 175px;
+    }
+    .VehicleSelectors{
+    font-size: .9em;
+
+}
+    .VehicleCategories{
+        padding-left:unset;
+    }
+    .ProminentDropDowns {
+      
+       
+
+    }
+    .VehicleDropDown{
+    background-position: 5% 12px;
+    max-width: 350px;
+    padding-left: 7%;
+
+
+    }
+    .LocationDropDown {
+        max-width: 200px;
+
+
+    }
+      .VehicleDropDown {
+        min-width: 200px;
+
+    }
+    option {
+    font-size: 17px;
+}
+    .BenifitsSection h1 {
+        font-size: 2.1em;
+        
+    }
+    .BenifitsSection h4 {
+        font-size: 1.1em;
+        margin: auto 20px;
+    }
+    #Benifits-bold-line {
+    font-size: 1.4em !important;
+}
+    .BenifitsRegularText {
+    font-size: 1.2em;
+}
+    .ImageSetter{
+        width: unset!important;
+    }
+    .RightDescHolder
+    {
+        padding-left: 10%;
+    }
+    .LeftIconsHolder {
+        padding-left: 25%;
+    }
+    .RightDescHolder ul {
+     line-height: 30px;
+
+    }
+        .OfferContainer h1 {
+        font-size: 2em;
+    }
+
+    .OfferTilesContainer {
+        max-width: 90%;
+    }
+
+    .Tiles
+{
+            width:  150px;
+            height: 150px;
+            margin: 10px;
+    }
+        .Tiles > p {
+            font-size: 1em;
+        }
+    .VehicleDesc h1 {
+        font-size: 1.3em;
+    }
+    .VehicleIconsHolder {
+        width: 450px;
+    }
+    .BottomIconHolder {
+        margin-left: 15px;
+        
+    }
+    .Cities{
+         margin-left: 5%;
+    padding-left: 5%;
+     font-size: .9em;
+
+    }
+    .SectionDivider {
+        width: 70%;
+    }
+    .PopUpPrompt {
+        width: 70%;
+        margin-left: 16%;
+        max-width: 480px;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,134 @@
+﻿.MainContent
+{
+  
+    width: 90%;
+    margin: 0 auto;
+    
+    overflow:hidden;
+}
+
+body{
+background-position: 0px -1200px!important;
+transition: background-position 1s ease-in-out;
+}
+.MainContent > h1{
+    margin-bottom: 20px;
+}
+.InputHolder{
+    background: #f2f2f2;
+    /*box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.3);*/
+    box-shadow: 0 -1px 0 #e0e0e0,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    padding: 20px 5px;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.InputHolder > input[type="text"]{
+    border: none;
+    outline: none;
+    width: 95%;
+    height: 30px;
+    font-size: 1em;
+    margin: 5px 0px;
+    padding: 5px;
+    margin-left: 2.5%;
+
+}
+.InputHolder > input[type="text"]:focus{
+ 
+    height: 35px;
+ box-shadow: 0 -1px 0 #e0e0e0,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+ transition: all .2s ease-in-out;
+
+}
+
+.InputHolder > textarea{
+    border: none;
+    outline: none;
+    margin: 5px 0px;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 50px;
+    padding: 5px;
+    font-size: 1em;
+}
+    .InputHolder > textarea:focus {
+    height: 55px;
+ box-shadow: 0 -1px 0 #e0e0e0,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+ transition: all .2s ease-in-out;
+
+    }
+
+.InputHolder >  input::-webkit-input-placeholder{
+    color: #999!important;
+}
+.InputHolder > input::-moz-input-placeholder{
+    color: #999!important;
+}
+
+.InputHolder > input::-ms-input-placeholder{
+    color: #999!important;
+}
+.InputHolder > input[type="submit"]{
+    font-size: 1em;
+    padding: 5px 20px;
+    background: #ffc107;
+    border: none;
+    outline:none;
+    color: #fff;
+ box-shadow: 0 2px 4px rgba(0,0,0,.24);
+ 
+ margin: 10px 2.5%;
+
+}
+    .InputHolder > input[type="submit"]:hover {
+        cursor: pointer;
+    }
+    .PassedData{
+        max-width: 350px;
+        float: left;
+        padding: 20px 0px;
+        margin-left: 10%;
+        border-top: 1px solid black;
+        border-left:none;
+        overflow:hidden;
+    }
+    .PassedData > div{
+        background: rgb(235,235,228);
+        padding: 5px 10px;
+        font-size: 1em;
+        color: #999;
+        max-width: 250px!important;
+    }
+@media only screen and (min-width: 500px)
+{
+.MainContent > h1{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 0px;
+}
+.InputHolder{
+    margin-left: 5%;
+    display: inline-block;
+    float: left;
+}
+.PassedData{
+     width: 50%;
+        margin-left: 30px;
+           border-left: 1px solid black;
+        border-top:none;
+        padding: 20px 20px;
+}
+}
+
+@media only screen and (min-width: 780px)
+{
+body{
+    background-position: 0px -100px!important;
+}
+    .PassedData {
+        
+        margin-left: 20%;
+    }
+}

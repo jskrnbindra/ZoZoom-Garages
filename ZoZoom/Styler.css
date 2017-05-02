@@ -1,0 +1,1010 @@
+﻿* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: all .2s ease-out;
+}
+
+    *::selection {
+        background: #ffc107;
+        color: #fff;
+        font-weight: 700;
+        opacity: 1;
+    }
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-image: url('Images/Custom Backerland.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none !important;
+}
+
+    a:hover {
+        text-decoration: underline !important;
+    }
+
+header {
+    background: #ffc107;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    display: block;
+    z-index: 5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    /*box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);*/
+}
+
+.TopLogo {
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.Logo {
+    display: none;
+}
+
+.SignIn {
+    display: none;
+}
+
+nav {
+    margin-top:-4px;
+    display: none;
+}
+
+    nav > a {
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 4px;
+    }
+
+        nav > a:hover {
+            opacity: .7;
+            text-decoration: none !important;
+        }
+
+.LoginHolder {
+    padding: 10px 4% 0px 30px;
+}
+.HoverButtonLook-primary{
+
+}
+.HoverButtonLook-primary:hover
+{
+    background: #FF6165;
+    box-shadow: 0px 0px 1px rgba(0,0,0,.2);
+    opacity: 1;
+   
+    border-radius: 3px;
+}    
+.SignIn {
+    text-decoration: underline !important;
+    color: #7c66ff;
+    float: left;
+    margin-top: 5px;
+}
+
+SignIn:hover {
+    opacity: initial;
+    text-decoration: underline !important;
+}
+
+.HamBurgerMenu {
+    height: 40px;
+    width: 33px;
+    background: #000;
+    float: left;
+    border-bottom: 10px solid #ffc107;
+}
+
+.SmallScreenMenuNav {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#FF6165,#ffc107);
+    z-index: 7;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    color: #fff;
+    padding-top: 5%;
+    display: none;
+    z-index: 9;
+}
+.CustomFadeIn{
+    animation: CustomFader .2s ease;
+}
+@keyframes CustomFader
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+    .SmallScreenMenuNav h1 {
+        padding: 0px 0px 5px 6%;
+    }
+
+    .SmallScreenMenuNav h5 {
+        padding: 0px 0px 5px 6%;
+    }
+
+#Explore-Scroller-Link::after {
+    content: url('Icons/ic_keyboard_arrow_down_white_18dp.png');
+    position: relative;
+    top: 5px;
+}
+
+.CopyRightMenu {
+    text-align: center;
+    font-size: .95em;
+}
+    .CopyRightMenu:hover {
+        color: #cb2759;
+        text-decoration: none !important;
+    }
+
+.SmallScreenMenuNav a {
+    color: #fff;
+}
+
+.Hamburger {
+    height: 100%;
+    background-color: #FFC107;
+    border-right: 1px solid #FF6165;
+    border-left: 1px solid #FF6165;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.SignUpButton {
+    background: #FF6165;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+    float: left;
+    border-color: #ffc107;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+    .SignUpButton:hover {
+        background: #ffc107;
+        border: 2px solid #FF6165;
+        color: #FF6165;
+        font-weight: 700;
+        transition: all .3s;
+        cursor: pointer;
+         -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+
+.DynamicSpacemaker {
+    height: 75px;
+    display: block;
+    margin-top: 50px;
+}
+
+.DynamicRedirect {
+    background: transparent;
+    width: 100px;
+    height: 25px;
+    border: 2px solid #00aeef;
+    font-size: 14px;
+    color: #999;
+    float: right;
+    margin: 15px 15px auto auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background,color .3s;
+    font-weight: 400;
+}
+
+    .DynamicRedirect:hover {
+        background: #00aeef;
+        color: #fff;
+    }
+.TopBar {
+    overflow: hidden;
+    display:none;
+    background : linear-gradient(#f1f1f1,#dbdbdb);
+
+}
+.EyeCatcher{
+    animation: Attentionseeker ease-in-out 1s 3s;
+border: 2px solid #fff;
+border-top: none;
+}
+
+@keyframes Attentionseeker{
+    0%{
+         background: #f1f1f1;
+    }
+    50%{
+          background: initial;
+    }
+    100%{
+          background: #f1f1f1;
+    }
+}
+.DownloadAppLink{
+font-weight: 400;
+margin: 0px; 
+padding: 0px;
+color: #f1f1f1;
+}
+.DownloadAppLink:before{
+  content: url('Icons/ZoZoomAppDownloadIconpsd.png');
+ position: relative;
+ top:10px;
+ opacity: .8;
+}
+.CallNowLink:before{
+    content: url('Icons/smartphone-24-hours-service.png');
+     position: relative;
+ opacity: .8;
+ top:8px;
+ right: 5px;
+}
+.TopClassNAV{
+    float: right;
+    height: 60px;
+}
+.TopClassNAV > a{
+    height: 100%;
+    width:20px!important;
+    overflow: hidden;
+    color: initial;
+    padding: 20px;
+    font-weight: 300;    
+}
+.TopClassNAV > a:hover
+{
+    background: #f1f1f1;
+}
+.CenterIt { /*Text only*/
+    text-align: center;
+    margin: 0 auto;
+}
+.ThisRight {
+    float: right;
+}
+
+
+.ThisLeft {
+    float: left;
+}
+
+.MostProminentText {
+    font-size: 1.7em;
+    padding: 0px 10px;
+    font-weight: 500;
+}
+/*Blinking cursor animatino*/
+.typed-cursor {
+    color: #000 !important;
+    float: left !important;
+    opacity: 1;
+    margin-top: 11px;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*ends here blinking cursor animation*/
+.AnimationPositioner {
+    width: 160px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ServicesAnimation {
+    font-size: .8em;
+    font-weight: 700;
+    margin-top: 12px;
+    padding: 0px;
+}
+/*
+  .GuiderSpacemaker{
+      height: 35px;
+      display:block;
+  }*/
+.VehicleCategories {
+    padding: 9px 0px;
+    max-width: 300px;
+    margin: 30px auto;
+    border-bottom: 1px solid #7676fc;
+    padding-left: 10px;
+}
+
+.VehicleSelectors {
+    font-size: .8em;
+}
+
+.VehicleSelectorRadios {
+    margin-left: 20px;
+}
+.DropdownsHolder {
+    margin: 0 auto;
+    max-width: 900px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.ProminentDropDowns {
+    margin-left: 15px;
+    border: 1px solid #ffc107;
+    font-size: 1.25em;
+    padding: 12px 0px 12px 65px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    
+    /*box-shadow: 0px 2px 3px .5px rgba(0,0,0,0.1);*/
+}
+ input::-webkit-input-placeholder{
+    color: #000!important;
+}
+input::-moz-input-placeholder{
+    color: #000!important;
+}
+
+input::-ms-input-placeholder{
+    color: #000!important;
+}
+
+
+.LocationDropDown {
+    max-width: 250px;
+    background: url('Icons/ic_location_searching.png') no-repeat;
+    background-position: 22px 12px;
+    float: left;
+        padding: 13px 0px 13px 0px;
+}
+
+.VehicleDropDown {
+    min-width: 250px;
+    background: url('Icons/ic_directions_car_18pt_2x.png') no-repeat;
+    background-position: 5% 12px;
+    float: left;
+    padding-left: 13%;
+}
+
+.ServiceDropDown {
+    min-width: 250px;
+    background: url('Icons/ic_build_black_24dp.png') no-repeat;
+    background-position: 22px 12px;
+    float: left;
+    margin-right: 0px;
+}
+
+
+option {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.InBoxIcons {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    left: 50px;
+}
+
+.ProceedButton {
+    background: #ffc107 no-repeat;
+    background-image: url('Icons/ic_arrow_forward_white_36dp.png');
+    background-position: 163px 14px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 1.7em;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+    .ProceedButton:hover {
+        background-color: #E6AC00;
+        background-image: none;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+         -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+
+    .ContactNow{
+        background-color: #56ba08;
+        background-image: url('Icons/ic_call_white_18dp.png');
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 5px 5px;
+        color: #fff;
+        padding: 5px 5px 0px 30px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        height: 30px;
+        position: fixed;
+        bottom: 20%;
+        right: 0px;
+        opacity: .8;
+    }
+    .ContactNow:hover{
+        opacity:1;
+    }
+
+.BenifitsTop {
+    color: #999;
+}
+
+.BenifitsSection h1 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.BenifitsSection h4 {
+    font-size: .85em;
+    margin: auto 10px;
+    font-weight: 400;
+    padding-bottom: 13px;
+}
+
+#Benifits-bold-line {
+    font-weight: 700;
+    font-size: 1.1em !important;
+}
+
+.Second-Half {
+    overflow: hidden;
+    padding-top: 50px;
+    margin-bottom: 50px;
+/*background: url('Images/Custom Backerland.jpg') no-repeat;*/
+background-attachment: fixed;
+
+}
+
+.LeftIconsHolder {
+    width: 100%;
+    padding-left: 5%;
+    float: left;
+}
+
+.RightDescHolder {
+    float: left;
+    padding: 0px 10px 10px 10px;
+    width: 100%;
+}
+
+    .RightDescHolder h1 {
+        font-size: 2em;
+        color: #07729a;
+        font-weight: 400;
+        margin-bottom: -13px;
+        padding-top: 20px;
+    }
+
+.BenifitsRegularText {
+    font-size: 1em;
+}
+
+.RightDescHolder p:first-of-type {
+    opacity: .55;
+    margin: 27px auto;
+    font-weight: 700 !important;
+    font-style: italic;
+}
+
+.RightDescHolder ul {
+    padding-left: 30px;
+    line-height: 20px;
+}
+
+.ImageSetter {
+    width: 95% !important;
+}
+
+.OfferContainer {
+    background: #ebebeb;
+    padding: 27px 27px 22px 27px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+
+    .OfferContainer h1 {
+        opacity: .7;
+        font-size: 1.4em;
+        font-weight: 400;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+.OfferTilesContainer {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 95%;
+}
+
+.Tiles {
+    float: left;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 3%;
+    z-index: 2;
+    margin: 5px;
+    border: 8px solid #fff;
+    box-shadow: 0px 3px 5px .5px rgba(0,0,0,0.1);
+}
+
+    .Tiles:hover {
+        box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.1);
+    }
+
+.OffersTileHolder {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-size: auto 100% !important;
+    -moz-filter: brightness(22%);
+    -o-filter: brightness(22%);
+    -webkit-filter: brightness(22%);
+    filter: brightness(22%);
+    padding: 18px 10px;
+    float: left;
+}
+
+    .OffersTileHolder:hover {
+        -moz-filter: brightness(50%);
+        -o-filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        filter: brightness(50%);
+    }
+
+.OfferTileHover {
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+.Tiles > p {
+    color: #fff;
+    position: relative;
+    font-size: .75em;
+    font-weight: 400;
+    z-index: 4;
+    float: left;
+    bottom: 92%;
+    width: 85%;
+    left: 5%;
+}
+/*  #InPara:hover + .Title {
+         -moz-filter: brightness(50%);
+   -o-filter: brightness(50%);
+   -webkit-filter: brightness(50%);
+   filter: brightness(50%);
+    
+ }*/
+
+.offer1 {
+    background: url('Images/olacabs-taxi-03-1464949870.jpg') no-repeat;
+}
+
+.offer2 {
+    background: url('Images/CCD-Coffee.jpg') no-repeat;
+}
+
+.offer3 {
+    background: url('Images/ebay.jpg') no-repeat;
+}
+
+.offer4 {
+    background: url('Images/paytm-cashback1.png') no-repeat;
+}
+
+.TagLineStretch {
+    background: #ffc107;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 75px;
+}
+
+    .TagLineStretch h1 {
+        font-size: 1.7em;
+        font-weight: 300;
+        color: #fff;
+    }
+
+.VehicleDesc {
+    padding-bottom: 70px;
+}
+
+    .VehicleDesc h1 {
+        font-weight: 700;
+        margin-bottom: 55px;
+        font-size: 1.2em;
+    }
+
+.VehicleIconsHolder {
+    width: 65%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.BakTest{
+/*background: url('Images/Custom Backerlandx.jpg');*/
+background-attachment:fixed;
+/*background-repeat: none;*/
+background-size: cover;
+}
+.BottomIconHolder {
+    width: 124px;
+    height: 124px;
+    max-width: 124px;
+    background: #000;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+#Bike-Icon-div {
+    background: url('Icons/Bike_icon.png') no-repeat;
+}
+
+#Car-Icon-div {
+    background: url('Icons/Car_icon.png') no-repeat;
+}
+
+#Auto-Icon-div {
+    background: url('Icons/Auto_icon.png') no-repeat;
+}
+
+.SubProminent {
+    margin-top: 50px;
+    font-weight: 600;
+    opacity: .9;
+}
+
+.ServiceColor {
+    color: #7c66ff;
+}
+
+.SubProminent2 {
+    margin: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    opacity: .9;
+    margin-bottom: 60px;
+}
+
+#Explore-services-button {
+    width: 250px;
+    font-size: 1.3em;
+    background-position: 215px 14px;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+footer {
+    background: #333;
+}
+
+
+.FooterStretch {
+    overflow: hidden;
+    padding: 65px 0px;
+}
+
+.LeftLoose {
+    height: 250px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.LogoPlacer {
+    background: url('Icons/FooterLOGO.png') no-repeat;
+    width: 275px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.FooterColumns {
+    padding: 0px 0px 0px 3%;
+    width: 100%;
+    float: left;
+}
+
+.footerHeads {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    margin: 30px auto 18px auto !important;
+    text-decoration: none !important;
+}
+
+    .footerHeads a:hover {
+        text-decoration: none !important;
+    }
+
+.footerLinks {
+    color: darkgray;
+    padding: 6px 0px;
+    display: block;
+}
+
+    .footerLinks:hover {
+        color: #7EA7D8;
+        text-decoration: none !important;
+    }
+
+#contactNo:before {
+    margin-right: 3px;
+    content: url('Icons/phone.png');
+    position: relative;
+    top: 3px;
+}
+
+#contactMail:before {
+    content: url('Icons/mail.png');
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+.SocialPanel {
+    width: 190px;
+    margin-top: 8%;
+    margin: 0px auto;
+}
+
+.SectionDivider {
+    width: 90%;
+    margin: 0 auto;
+    height: 1px;
+    border: none;
+    background: -webkit-linear-gradient(left, #7c66ff, #ffc107);
+    background: -o-linear-gradient(right, #7c66ff, #ffc107);
+    background: -moz-linear-gradient(right, #7c66ff, #ffc107);
+    background: linear-gradient(to right, #7c66ff, #ffc107);
+}
+
+.FooterBottom {
+    margin: 65px auto;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.LogoHolderFooter2 {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 314px;
+}
+
+.CityNames {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.Cities {
+    color: #fff;
+    margin-left: 4%;
+    padding-left: 4%;
+    border-left: 1px solid #fff;
+    font-size: .7em;
+}
+
+#DivException {
+    border: none;
+}
+
+.TitleStyle {
+    font-weight: 700;
+    color: #219fda;
+}
+
+[class*=FooterDesc] {
+    color: #fff;
+}
+
+.FooterDescPara1 {
+    margin: 0px 7px;
+    margin-bottom: 35px;
+    opacity: .95;
+}
+
+.FooterDescPara2 {
+    margin: 0px 10px;
+    margin-bottom: 75px;
+    opacity: .9;
+}
+
+.FooterDescBottom {
+    color: #9d9d9d;
+    margin-bottom: 60px;
+}
+.DynamicRedirect{
+       -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display:none!important;
+
+}
+.DynamicRedirect:hover{
+       -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.PopUpPrompt{
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 10%;
+    height: auto;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.1);
+    background: #fff;
+    position: fixed;
+    top: 20%;
+    padding: 20px;
+     font-size: .7em;
+     max-width: 380px;
+     z-index: 10;
+   display:none;
+
+}
+.PopUpPrompt > h4{
+    opacity: .78;
+}
+.LocationPromptBtns{
+    box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.1);
+    border:none;
+    outline: none;
+    background: #fff;
+    padding: 5px 10px;
+    margin: 3px;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+border-radius: 0px;
+
+}
+.LocationPromptBtns:hover{
+    cursor: pointer;
+}
+.YesPrompt{
+    background: #7c66ff;
+    color: #fff;
+}
+.YesPrompt:hover{
+    background: #472cea;
+}
+.NoPrompt{
+    background:rgba(0,0,0,0.1);
+    box-shadow: none;
+    font-size: .9em;
+}
+.NoPrompt:hover
+{
+    background: rgba(0,0,0,0.2);
+}
+.DarkBackdrop{
+    background: #000;
+    z-index: 9;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+   opacity: .7;
+   display:none;
+}
+/* For Tablets=============================================================================*/
+@media only screen and (min-width: 500px) {
+
+    .FooterColumns {
+        width: 200px;
+    }
+
+    .LeftLoose {
+        float: none;
+    }
+
+    .Logo {
+        display: block;
+    }
+
+    .MinLogo {
+        display: none;
+    }
+
+    .TopLogo {
+        margin-left: 40px;
+    }
+}
+
+/* For Desktops=============================================================================*/
+
+@media only screen and (min-width: 768px) {
+
+    .SignIn {
+        display: block;
+    }
+
+    .LeftLoose {
+        width: 35%;
+        float: left;
+    }
+
+    .FooterColumns {
+        width: auto;
+        min-width: 180px;
+    }
+  
+}

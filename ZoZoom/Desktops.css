@@ -1,0 +1,102 @@
+﻿@media only screen and (min-width: 780px) {
+    body {
+        background-size: contain;
+    }
+
+    nav {
+        display: initial;
+    }
+        .SignIn{
+  display: block;
+}
+  .TopBar {
+        display:initial;
+    }
+    .HamBurgerMenu{
+        display: none;
+    }
+    .SmallScreenMenuNav{
+        display:none;
+    }
+    .MostProminentText {
+        font-size: 3em;
+    }
+
+    .VehicleDropDown {
+        background-position: 17% 12px;
+        min-width: 400px;
+         padding-left: 13%;
+
+    }
+    .LeftIconsHolder {
+        width: 45%;
+        padding-right: 10%;
+    }
+    .RightDescHolder {
+        width: 55%;
+    }
+        .RightDescHolder h1 {
+            font-size: 36px;
+        }
+    .LeftIconsHolder {
+        padding-left: 5%;
+    }
+
+
+    .OfferTilesContainer {
+        max-width: 85%;
+    }
+
+    .Tiles
+{
+            width: 21%;
+            height: 200px;
+    }
+        .Tiles > p {
+            font-size: 1.1em;
+        }
+ 
+        .TagLineStretch h1 {
+            font-size: 2.7em;
+        }
+    .VehicleDesc h1 {
+        font-size: 1.8em;
+    }
+       .VehicleIconsHolder {
+        width: 65%;
+    }
+    .BottomIconHolder {
+        margin-left: 15%;
+    }
+    .CityNames {
+        width: 70%;
+    }
+    .Cities{
+        padding-left: 6%;
+        margin-left: 6%;
+        font-size: 1em;
+    }
+        .PopUpPrompt {
+        
+        margin-left: 31%;
+        
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    .CityNames {
+        width: 60%;
+    }
+    nav > a {
+        font-size: 18px;
+         margin-left: 18px;
+         padding: 6px;
+    }
+    .Tiles{
+        margin-left: 3%;
+    }
+    .CityNames{
+        width: 50%;
+    }
+}

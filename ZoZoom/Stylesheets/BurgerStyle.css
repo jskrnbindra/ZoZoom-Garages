@@ -1,0 +1,55 @@
+.menu {
+  cursor: pointer;
+  margin-left: 4px;
+  margin-top: -24px;
+  width: 33px;
+  height: 35px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.menu-global {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  border-top: 3px solid white;
+  width: 100%; 
+  -webkit-transition: 0.55s;
+  transition: 0.55s;
+}
+
+.menu-top {
+  top: 10px;
+  max-width: 23px;
+}
+.menu-middle {
+  max-width: 23px;
+  top: 17px;
+}
+
+.menu-bottom {
+  max-width: 23px;
+  top: 24px;
+}
+
+.menu-top-click {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 18px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  -webkit-transition: 0.55s 0.5s;
+  transition: 0.35s 0.3s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 18px;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  -webkit-transition: 0.55s 0.5s;
+  transition: 0.15s 0.1s;
+}
